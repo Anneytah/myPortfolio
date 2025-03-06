@@ -118,6 +118,10 @@ nav .nav-div .nav-bar {
   margin: 0 auto;
   background-color: #a8b2d1;
 }
+.column a:hover{
+  color: #64ffda;
+}
+
 .lists {
   display: flex;
   flex-direction: column;
@@ -140,23 +144,26 @@ nav .nav-div .nav-bar {
   font-size: 40px;
   /* display: inline-block; */
 }
+.icon:hover{
+  color: #64ffda;
+}
+
 .content {
-  display: block;
+  /* display: block;
   margin: 0 auto;
-  width: 100%;
+  width: 100%; */
   max-width: 1600px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   padding: 0px 200px;
 }
-.contain {
+/* .contain {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
   min-height: 90vh;
   max-width: 1200px;
-  /* line-height: 1.5px; */
-}
+} */
 .course-link {
   color: #64ffda;
   border: 1px solid #64ffda;
@@ -170,9 +177,9 @@ nav .nav-div .nav-bar {
 }
 
 .about {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 300px 0 0;
-  max-width: 800px;
+  /* max-width: 800px; */
   display: block;
   margin-bottom: 200px;
   /* text-align: center; */
@@ -202,15 +209,6 @@ nav .nav-div .nav-bar {
   height: 1px;
   margin-left: 20px;
   background-color: #a8b2d1;
-}
-.about-divide {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 50px;
-}
-.image {
-  max-width: 300px;
-  position: relative;
 }
 .image .inner {
   width: 100%;
@@ -286,9 +284,6 @@ nav .nav-div .nav-bar {
   text-decoration: none;
   color: #64ffda;
 }
-.contain h2 {
-  font-size: 80px;
-}
 .list{
   display: none;
   color: white;
@@ -327,22 +322,22 @@ nav .nav-div .nav-bar {
   .content {
     padding: 0 50px;
   }
-  .contain h2 {
+  /* .contain h2 {
     font-size: 50px;
-  }
-  .namee {
+  } */
+  /* .namee {
     font-size: 50px;
-  }
+  } */
   .about-divide {
     grid-template-columns: none;
     margin: 20px;
   }
-  .image {
+  /* .image {
     width: 100%;
-    position: absolute;
+    position: absolut;
     margin-top: 400px;
-    /* left: 20em; */
-  }
+    left: 20em;
+  } */
     .nav-link {
       /* display: none; */
       /* align-items: center; */
@@ -357,4 +352,14 @@ nav .nav-div .nav-bar {
       color: antiquewhite;
       font-size: 40px;
     }
+        .heading::after {
+          content: "";
+          display: block;
+          position: relative;
+          top: 0px;
+          width: 150px;
+          height: 1px;
+          margin-left: 20px;
+          background-color: #a8b2d1;
+        }
 }

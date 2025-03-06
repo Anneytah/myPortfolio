@@ -19,7 +19,7 @@ const NavBars = () => {
         <div className="nav-bar">
           <div className="logo0 flex justify-around mt-5 gap-20 ">
             <h1>
-              <a href="/" className="text-5xl"  >ASA</a>
+              <a href="/" className="text-5xl">ASA</a>
             </h1>
             <PiList className="list text-white block md:hidden " onClick={toggleNavbar}/>
           </div>

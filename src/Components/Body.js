@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import React, { useEffect, useState } from "react";
 import { TbBrandGithub } from "react-icons/tb";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";
@@ -9,6 +10,21 @@ import Contact from "./Contact";
 import Project from "./Project";
 
 function Body() {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  // Update the cursor's position whenever it moves
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
     <div className="body">
       <div aria-orientation="vertical" className="left">
@@ -34,7 +50,10 @@ function Body() {
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" className="icon">
+            <a
+              href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+              className="icon"
+            >
               <FiLinkedin />
             </a>
           </li>
@@ -47,35 +66,64 @@ function Body() {
         </div>
       </div>
 
-      <main className="content">
+      <main className="content overflow-hidden">
         <section className="contain">
           <div>
-            <h1 style={{ color: "#64ffda", fontSize: 18, marginTop: 150}}>Hi, my name is</h1>
+            <h1 style={{ color: "#64ffda", fontSize: 18, marginTop: 300 }}>
+              Hi, my name is
+            </h1>
           </div>
           <div>
-            <h2 style={{ margin: 0, color: "#ccd6f6" }} className="namee">
+            <h2
+              style={{ margin: 0, color: "#ccd6f6" }}
+              className="namee text-7xl max-sm:text-5xl"
+            >
               <b>Aniago Somtochukwu Anita.</b>
             </h2>
           </div>
-          <div style={{marginTop: 10}}>
-            <h3 style={{ fontSize: 60, margin: 0, color: "#8892b0" }} className="namee">I build things for the web.</h3>
+          <div style={{ marginTop: 10 }}>
+            <h3
+              style={{ margin: 0, color: "#8892b0" }}
+              className="text-5xl max-sm:text-3xl"
+            >
+              Crafting Beautiful Web Experiences.
+            </h3>
           </div>
-          <div style={{minWidth: 10}}>
-            <p style={{marginTop: 20, color: "#8892b0", fontSize: 18, lineHeight: 1.3}}>
-              I’m a software engineer specializing in building (and occasionally
-              designing) exceptional digital experiences. Currently, I’m focused
-              on building accessible, human-centered products at Upstatement.
+          <div style={{ minWidth: 10 }}>
+            <p
+              style={{
+                marginTop: 20,
+                color: "#8892b0",
+                fontSize: 18,
+                lineHeight: 1.3,
+              }}
+            >
+              I’m a frontend developer who’s
+              passionate about crafting beautiful, dynamic web experiences that
+              wow users. With every line of code, I turn ideas into interactive,
+              visually stunning websites that are fast, responsive, and designed
+              to impress!
             </p>
           </div>
-          <div style={{marginTop: 50}}>
-            <a href="/" className="course-link">Check out my course!</a>
+          <div style={{ marginTop: 50 }}>
+            <a href="/" className="course-link">
+              Check out my Projects !
+            </a>
           </div>
 
-        <About/>
-        <Project/>
-        <Contact/>
+          <About />
+          <Project />
+          <Contact />
         </section>
       </main>
+
+      <div
+        className="fixed w-14 h-14 border border-white rounded-full pointer-events-none"
+        style={{
+          top: position.y - 20,
+          left: position.x - 20,
+        }}
+      ></div>
     </div>
   );
 }
