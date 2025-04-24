@@ -11,7 +11,7 @@ function NavBar() {
   };
   return (
     <>
-      <nav className=" border-gray-200 dark:bg-gray-900">
+      <nav className="border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <h1>
             <a href="/" className="text-5xl  text-[#a8b2d1]">
@@ -38,7 +38,7 @@ function NavBar() {
                   
                   className="block text-[#a8b2d1] py-2 pl-3 pr-4  rounded "
                 >
-                  About
+                  About_Me
                 </NavLink>
               </li>
               <li>
@@ -54,7 +54,7 @@ function NavBar() {
                   
                   className="block text-[#a8b2d1] py-2 pl-3 pr-4  rounded "
                 >
-                  Contact
+                  Contact_Me
                 </NavLink>
               </li>
               {/* <li>

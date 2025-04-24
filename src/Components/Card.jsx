@@ -1,25 +1,75 @@
-import React from 'react'
+import React from "react";
 
 const Card = (props) => {
   return (
-    <div class="max-w-[25rem]  mx-auto rounded-xl shadow border border-green-300 relative">
-<div className="absolute inset-0 flex p-4 justify-center bg-black bg-opacity-0 hover:bg-opacity-60 text-white text-lg opacity-0 hover:opacity-100 transition duration-300">
-  {/* <div className='text-white'> */}
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid mollitia voluptatum tempora quis reiciendis autem, modi ex ea incidunt ad.</p>
-    <a href='/' className='w-20 h-20 border '></a>
-  {/* </div> */}
-</div>
-      <a href='/'>
-        <img class="rounded-t-lg" src={props.img} alt='not found'/>
-      </a>
+    <>
+      <h3 className="text-3xl py-5 pb-0 text-[#64ffda] font-semibold">
+        {props.title}
+      </h3>
+      <div
+        className={`lg:flex md:flex-col gap-7 my-5 m-0 ${
+          props.reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+        }`}
+      >
+        <div>
+          <img
+            className="rounded-t-lg lg:max-w-[38rem] border border-green-300"
+            src={props.img}
+            alt="not found"
+          />
+        </div>
+        <div>
+          <div>
+            <h3 className="text-lg text-[#ccd6f6] font-semibold lg:pt-0 pt-6">
+              {props.description}
+            </h3>
+            <p className="text-green-300 font-semibold text-base py-5 pb-2">
+              {props.feature}
+            </p>
 
-      <div class="p-5 flex flex-col gap-3 rounded-xl bg-[#343842] ">
-        <h3 style={{ color: "#ccd6f6" }}  className={`text-xl text-center bg-[#343842]`}>{props.title}</h3>
-        <h3 style={{ color: "#ccd6f6" }} className={`text-xl text-center bg-[#343842]`}>{props.terminologies}</h3>
+            <ul className="list-disc text-[#ccd6f6] text-[14px] px-5">
+              <li>{props.first}</li>
+              <li>{props.second}</li>
+              <li>{props.third}</li>
+              <li>{props.third}</li>
+              <li>{props.forth}</li>
+              <li>{props.fifth}</li>
+            </ul>
+
+            <p className="text-green-300 font-semibold text-base py-5 pb-2">
+              {props.tech}
+            </p>
+
+            <div className="flex gap-2 text-xs text-green-300 text-center">
+              <div className="border border-green-300 rounded-md px-3 py-1">
+                {props.react}
+              </div>
+              <div className="border border-green-300 rounded-md px-3 py-1">
+                {props.tailwind}
+              </div>
+              <div className="border border-green-300 rounded-md px-3 py-1">
+                {props.frame}
+              </div>
+            </div>
+
+            <div className="flex gap-4 my-10">
+              <a href="/" className="cursor-pointer">
+                <div className="borde border-green-300 rounded-md px-8 py-2 bg-green-500 hover:bg-green-600 transform hover:-translate-y-1 transition duration-300 ease-in-out">
+                  {props.view}
+                </div>
+              </a>
+
+              <a href="/">
+                <div className="border border-green-300 rounded-md px-8 py-2 text-green-300 hover:bg-green-500 hover:text-black transform hover:-translate-y-1 transition duration-300 ease-in-out">
+                  {props.repo}
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+    </>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Card
+export default Card;

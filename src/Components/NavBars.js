@@ -5,8 +5,7 @@ import { PiList } from "react-icons/pi";
 
 const NavBars = () => {
      
-     const [onToggle, setToggle] = useState(false)
-
+     const [onToggle, setToggle] = useState(false);
      const toggleNavbar = () => {
          setToggle(!onToggle) 
      }
@@ -31,7 +30,7 @@ const NavBars = () => {
             <ul className={`liste ${onToggle ? "block" : "hidden md:flex"}`}>
               <li><a href="/" className="nav-linker">Home</a></li>
               <li><a href="/" className="nav-linker">About</a></li>
-              <li><a href="/" className="nav-linker">Project</a></li>
+              <li><a href="/" className="nav-linker">Projects</a></li>
               <li><a href="/" className="nav-linker">Contact</a></li>
               <li><a href="/" className="nav-linker">Home</a></li>
             </ul>

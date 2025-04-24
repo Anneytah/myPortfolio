@@ -8,61 +8,40 @@ function About() {
     <div>
       <section className="about">
         <div>
-          <h1 style={{ color: "#ccd6f6" }} className="heading">
+          <h1 style={{ color: "#ccd6f6" }} className="heading text-[32px]">
             About Me
           </h1>
         </div>
 
         <div className="flex max-sm:flex-col gap-14">
-          <div className="para w-[50%] max-sm:w-full ">
+          <div className="para w-[50%] text-[#a8b2d1] max-sm:w-full lg:text-[15px] text-sm">
             <p>
-              Hello! My name is <span className="text-[#64ffda]">Anita</span>{" "},
-              I’m a frontend developer who’s all about turning ideas into
-              smooth, interactive web experiences. My journey into web
-              development started in 2020, and ever since, I’ve been hooked on
-              the endless possibilities the web offers. I’ve learned that coding
-              isn’t just about building websites—it’s about crafting experiences
-              that users can connect with. From designing sleek, responsive
-              layouts to adding those little touches that make a website feel
-              alive, I’m passionate about making the web more beautiful and
-              functional. I’m constantly exploring new frameworks, design
-              trends, and technologies to keep my skills sharp and my projects
-              fresh. 
+            I'm a frontend developer passionate about turning creative ideas into interactive, user-friendly web experiences. I enjoy bringing designs to life with clean, responsive code, and I'm constantly inspired by the way technology can solve real-world problems.
             </p>
             <p>
-             In 2023, I dove into the world of digital marketing, and
-              I’m excited to bring this new interest into my work. I’ve started
-              exploring how frontend design, content strategy, and SEO all play
-              a role in driving traffic and improving user engagement. The
-              synergy between web development and digital marketing has opened
-              up new avenues for creating holistic, user-centered online
-              experiences.
+            My journey in tech has been driven by curiosity, consistency, and a love for learning. Every project has taught me something new — whether it's about problem-solving, design thinking, or user experience.
             </p>
             <p>
-              When I’m not coding or learning about digital
-              marketing, you’ll find me experimenting with personal projects or
-              diving into the latest in web tech. If you have a vision for a
-              website, app, or digital strategy, let’s make it happen—I’m always
-              excited to bring new ideas to life.
+            Currently, I'm expanding my skill set by learning TypeScript through a Udemy course. I'm sharpening my ability to write safer, more scalable code, and getting a better grasp of types, interfaces, and component reusability in React projects.
+
+            <br/>
+
+            Beyond coding, I enjoy collaborating with others, learning from fellow developers, solving problems and pushing myself to improve with every line of code I write. <br /> I speak English fluently and professionally.
             </p>
-            {/* <p>Here are a few technologies I’ve been working with recently: </p> */}
-            {/* <ul className="skills">
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS 3</li>
-            <li>Tailwind CSS</li>
-            <li>BootStrap</li>
-            <li>Material UI</li>
-            <li>Technical Writing</li>
-            <li>Digital Marketing</li>
-          </ul> */}
+           
+
+           <div>
+            <h1 className="text-2xl py-10 pb-0 font-semibold">Languages</h1>
+            <ul className=" text-[#a8b2d1]">
+              <li className="text-green-300 px-6 py-2">English (Professional)</li>
+            </ul>
+           </div>
           </div>
 
           <div className="image w-[30%] relative max-sm:w-full">
-            <div className="inner">
-              <div className="image-wrapper">
-                <img src={Anita} alt="not found" className="picture" />
+            <div className="w-fit relative block rounded-md bg-[#64ffda]">
+              <div className="image-wrapper rounded-md relative">
+                <img src={Anita} alt="not found" className="lg:max-w-[22rem] block" />
               </div>
             </div>
           </div>

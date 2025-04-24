@@ -43,17 +43,17 @@ const skills = [
     },
     {
         id: "7",
-        name: "Copywriting",
+        name: "Git",
         icon: <SiMui />
     },
     {
         id: "8",
-        name: "Digital Marketing",
+        name: "TypeScript",
         icon: <MdLaptopMac />
     },
     {
         id: "9",
-        name: "Social Media Management",
+        name: "Responsive Development ",
         icon: <FaPen />
     },
 ]
@@ -84,20 +84,20 @@ const Skills = () => {
 
        <section className="py-12 mt-24">
       <div className="container mx-auto">
-        {/* <h2 className="text-2xl text-center mb-8">Skills</h2> */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+        <h2 className="text-3xl mb-8 text-[#ccd6f6]">Tech Stack</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="bg-[#343842] p-12 rounded-lg shadow-lg hover:shadow-2xl hover:text-green-300 hover:border-2 hover:border-green-300 transform hover:-translate-y-2 transition duration-300 ease-in-out text-center"
+              className="bg-[#343842] py-5 lg:py-10 rounded-lg shadow-lg hover:shadow-2xl hover:text-green-300 hover:border-2 hover:border-green-300 transform hover:-translate-y-2 transition duration-300 ease-in-out text-center"
             >
               {/* <img
                 src={skill.icon}
                 alt={`${skill.name} Icon`}
                 className="mx-auto mb-4 w-16 h-16"
               /> */}
-              <p className="w-5 mx-auto text-[#ccd6f6] py-2 text-lg"> {skill.icon}</p>
-              <p className="text-xl font-semibold text-[#ccd6f6]">{skill.name}</p>
+              <p className="w-5 mx-auto text-[#ccd6f6] py-2 lg:text-lg text-sm"> {skill.icon}</p>
+              <p className="lg:text-xl text-sm font-semibold text-[#ccd6f6]">{skill.name}</p>
             </div>
           ))}
         </div>
