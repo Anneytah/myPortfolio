@@ -188,9 +188,8 @@ nav .nav-div .nav-bar {
   border-radius: 5px;
   text-decoration: none;
   border: 1px solid #64ffda;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: block;
-  margin-top: 60px;
 }
 .contactMe a {
   text-decoration: none;

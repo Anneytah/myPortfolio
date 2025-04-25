@@ -2,13 +2,18 @@ import React from "react";
 import NavBars from "./NavBar";
 import Anime from "../Image/Anime.jpeg";
 import "../App.css";
+import { BsPersonHeart } from "react-icons/bs";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { MdOutlineWifiCalling } from "react-icons/md";
+import { MdAlternateEmail } from "react-icons/md";
+import Footer from "./Footer";
 
 const ContactMe = () => {
   return (
-    <div className="bg-[#282c34] pb-10 mx-auto overflow-hidden">
+    <div className="bg-[#282c34] pb-10 mt-6 overflow-hidden">
       <NavBars />
       <div className="mx-auto mt-36 max-w-6xl">
-        <h2 className="text-center text-3xl py-2">
+        <h2 className="text-center text-4xl py-2">
           <span className="text-[#ccd6f6]">Get In</span>{" "}
           <span className="text-[#64ffda]">Touch</span>
         </h2>
@@ -17,7 +22,7 @@ const ContactMe = () => {
           create something amazing together!
         </p>
 
-        <div className="flex gap-16 mx-auto mt-8">
+        <div className="flex gap-16 mx-auto mt-10">
           <div className="rounded-md bg-[#373b44] w-full">
             <form className="m-5 p-3">
               <p className="text-[#ccd6f6] text-sm">Name</p>
@@ -51,33 +56,42 @@ const ContactMe = () => {
             <div className="m-5 p-3">
               <h1 className="text-center font-semibold text-white text-2xl"> Contact Info</h1>
              
-             <div className="m-5 p-5">
+             <div className="mx-8 my-4 p-5">
                 <div className="flex p-4">
-                    Icon
-                    <div className="text-white px-3">
+                  <div className="text-white font-bold text-5xl">
+                  <BsPersonHeart />
+                  </div>
+                    <div className="text-white px-5">
                         <p>Name</p>
                         <p>Aniago Anita</p>
                     </div>
                 </div>
                 <div className="flex p-4">
-                    Icon
-                    <div className="text-white px-3">
-                        <p>Name</p>
-                        <p>Aniago Anita</p>
+                  <div className="text-white font-bold text-5xl">
+                  <FaMapLocationDot />
+                  </div>
+
+                    <div className="text-white px-5">
+                        <p>Location</p>
+                        <p>Rivers State, Nigeria.</p>
                     </div>
                 </div>
                 <div className="flex p-4">
-                    Icon
-                    <div className="text-white px-3">
-                        <p>Name</p>
-                        <p>Aniago Anita</p>
+                <div className="text-white font-bold text-5xl">
+                <MdOutlineWifiCalling />
+                  </div>
+                    <div className="text-white px-5">
+                        <p>Call</p>
+                        <p>+234 9034434787</p>
                     </div>
                 </div>
                 <div className="flex p-4">
-                    Icon
-                    <div className="text-white px-3">
-                        <p>Name</p>
-                        <p>Aniago Anita</p>
+                <div className="text-white font-bold text-5xl">
+                <MdAlternateEmail />
+                  </div>
+                    <div className="text-white px-5">
+                        <p>Email</p>
+                        <p>aniagoanita@gmail.com</p>
                     </div>
                 </div>
              </div>
@@ -87,6 +101,7 @@ const ContactMe = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

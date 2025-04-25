@@ -28,23 +28,23 @@ function NavBar() {
               <li>
                 <Link to="/"
                   
-                  className="block text-[#a8b2d1] py-2 pl-3 pr-4   rounded md:bg-transparent"
+                  className="block text-[#a8b2d1] py-2 pl-3 pr-4 md:bg-transparent"
                 >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about"
+                <Link to="/"
                   
-                  className="block text-[#a8b2d1] py-2 pl-3 pr-4  rounded "
+                  className="block text-[#a8b2d1] py-2 pl-3 pr-4"
                 >
                   About_Me
                 </Link>
               </li>
               <li>
-                <Link to="/project"
+                <Link to="/"
                   
-                  className="block text-[#a8b2d1] py-2 pl-3 pr-4  rounded "
+                  className="block text-[#a8b2d1] py-2 pl-3 pr-4"
                 >
                   Project
                 </Link>
@@ -52,7 +52,7 @@ function NavBar() {
               <li>
                 <Link to="/contact"
                   
-                  className="block text-[#a8b2d1] py-2 pl-3 pr-4  rounded "
+                  className="block text-[#a8b2d1] py-2 pl-3 pr-4"
                 >
                   Contact_Me
                 </Link>
@@ -60,7 +60,7 @@ function NavBar() {
               {/* <li>
                 <Link to=""
                   
-                  className="block text-[#a8b2d1] py-2 pl-3 pr-4  rounded "
+                  className="block text-[#a8b2d1] py-2 pl-3 pr-4"
                 >
                   Home
                 </Link>

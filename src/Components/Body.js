@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import Project from "./Project";
 import NavBars from "./NavBar";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 function Body() {
   
@@ -118,6 +119,10 @@ function Body() {
           <About />
           <Project />
           <Contact />
+
+          <div className="inline lg:hidden">
+            <Footer />
+          </div>
         </section>
       </main>
 

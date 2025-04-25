@@ -56,13 +56,18 @@ const Card = (props) => {
             </div>
 
             <div className="flex gap-4 my-10">
-              <a href="/" className="cursor-pointer">
+              <a
+                href={props.link}
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
                 <div className="border p-2 border-green-300 rounded-md lg:px-8 lg:py-2 bg-[#64ffda] hover:bg-green-400 transform hover:-translate-y-1 transition duration-300 ease-in-out">
                   {props.view}
                 </div>
               </a>
 
-              <a href="/">
+              <a href={props.repoLink} target="_blank" rel="noreferrer">
                 <div className="border p-2 border-green-300 rounded-md lg:px-8 lg:py-2 text-[#64ffda] hover:bg-[#64ffda] hover:text-black transform hover:-translate-y-1 transition duration-300 ease-in-out">
                   {props.repo}
                 </div>

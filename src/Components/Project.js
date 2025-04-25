@@ -50,6 +50,8 @@ const Project = () => {
               geo = "Geolocation"
               view = "View Live"
               repo = "Repository"
+              link = "https://anitas-forecast.netlify.app/"
+              repoLink = "https://github.com/Anneytah/weather-forecast"
               reverse
             />
             <Card
@@ -88,6 +90,8 @@ const Project = () => {
               frame = "Axios"
               view = "View Live"
               repo = "Repository"
+              link = "https://dictionary-project-001.netlify.app/"
+              repoLink = "https://github.com/Anneytah/dictionary-app"
               reverse
             />
             <Card

@@ -5,9 +5,10 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { BsBootstrapFill } from "react-icons/bs";
-import { SiMui } from "react-icons/si";
+import { TbBrandGithub } from "react-icons/tb";
 import { MdLaptopMac } from "react-icons/md";
-import { FaPen } from "react-icons/fa";
+import { BiLogoTypescript } from "react-icons/bi";
+// import { FaPen } from "react-icons/fa";
 
 
 const skills = [
@@ -43,18 +44,18 @@ const skills = [
     },
     {
         id: "7",
-        name: "Git",
-        icon: <SiMui />
+        name: "GitHub",
+        icon: <TbBrandGithub />
     },
     {
         id: "8",
         name: "TypeScript",
-        icon: <MdLaptopMac />
+        icon: <BiLogoTypescript />
     },
     {
         id: "9",
         name: "Responsive Development ",
-        icon: <FaPen />
+        icon: <MdLaptopMac />
     },
 ]
 
