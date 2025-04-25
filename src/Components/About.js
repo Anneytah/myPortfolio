@@ -1,7 +1,7 @@
 import React from "react";
 // import Girl from "../Image/Girl.JPG";
-import Anita from "../Image/Anita.jpg";
 import Skills from "./Skills";
+import Anita from "../Image/Anita.jpg";
 
 function About() {
   return (
@@ -33,7 +33,7 @@ function About() {
            <div>
             <h1 className="text-2xl py-10 pb-0 font-semibold">Languages</h1>
             <ul className=" text-[#a8b2d1]">
-              <li className="text-green-300 px-6 py-2">English (Professional)</li>
+              <li className="text-[#64ffda] px-6 py-2">English (Professional)</li>
             </ul>
            </div>
           </div>

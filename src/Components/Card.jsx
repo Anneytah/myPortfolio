@@ -13,7 +13,7 @@ const Card = (props) => {
       >
         <div>
           <img
-            className="rounded-t-lg lg:max-w-[38rem] border border-green-300"
+            className="rounded-t-lg lg:max-w-[38rem] border border-[#64ffda]"
             src={props.img}
             alt="not found"
           />
@@ -23,7 +23,7 @@ const Card = (props) => {
             <h3 className="text-lg text-[#ccd6f6] font-semibold lg:pt-0 pt-6">
               {props.description}
             </h3>
-            <p className="text-green-300 font-semibold text-base py-5 pb-2">
+            <p className="text-[#64ffda] font-semibold text-base py-5 pb-2">
               {props.feature}
             </p>
 
@@ -36,31 +36,34 @@ const Card = (props) => {
               <li>{props.fifth}</li>
             </ul>
 
-            <p className="text-green-300 font-semibold text-base py-5 pb-2">
+            <p className="text-[#64ffda] font-semibold text-base py-5 pb-2">
               {props.tech}
             </p>
 
-            <div className="flex gap-2 text-xs text-green-300 text-center">
-              <div className="border border-green-300 rounded-md px-3 py-1">
+            <div className="flex gap-2 text-xs text-[#64ffda] text-center">
+              <div className="border border-green-300 rounded-md lg:px-3 px-1 py-1">
                 {props.react}
               </div>
-              <div className="border border-green-300 rounded-md px-3 py-1">
+              <div className="border border-green-300 rounded-md lg:px-3 px-1 py-1">
                 {props.tailwind}
               </div>
-              <div className="border border-green-300 rounded-md px-3 py-1">
+              <div className="border border-green-300 rounded-md lg:px-3 px-1 py-1">
                 {props.frame}
+              </div>
+              <div className="border border-green-300 rounded-md lg:px-3 px-1 py-1">
+                {props.geo}
               </div>
             </div>
 
             <div className="flex gap-4 my-10">
               <a href="/" className="cursor-pointer">
-                <div className="borde border-green-300 rounded-md px-8 py-2 bg-green-500 hover:bg-green-600 transform hover:-translate-y-1 transition duration-300 ease-in-out">
+                <div className="border p-2 border-green-300 rounded-md lg:px-8 lg:py-2 bg-[#64ffda] hover:bg-green-400 transform hover:-translate-y-1 transition duration-300 ease-in-out">
                   {props.view}
                 </div>
               </a>
 
               <a href="/">
-                <div className="border border-green-300 rounded-md px-8 py-2 text-green-300 hover:bg-green-500 hover:text-black transform hover:-translate-y-1 transition duration-300 ease-in-out">
+                <div className="border p-2 border-green-300 rounded-md lg:px-8 lg:py-2 text-[#64ffda] hover:bg-[#64ffda] hover:text-black transform hover:-translate-y-1 transition duration-300 ease-in-out">
                   {props.repo}
                 </div>
               </a>

@@ -51,9 +51,6 @@ nav .nav-div .nav-bar {
   text-align: center;
   text-decoration: none;
 }
-.body {
-  background-color: #282c34;
-}
 .column {
   display: flex;
   flex-direction: column;

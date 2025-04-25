@@ -8,8 +8,11 @@ import { BsWhatsapp } from "react-icons/bs";
 import About from "./About";
 import Contact from "./Contact";
 import Project from "./Project";
+import NavBars from "./NavBar";
+import { Link } from "react-router-dom";
 
 function Body() {
+  
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   // Update the cursor's position whenever it moves
@@ -26,26 +29,27 @@ function Body() {
   }, []);
 
   return (
-    <div className="body">
+    <div className="bg-[#282c34]">
+      <NavBars/>
       <div aria-orientation="vertical" className="left lg:fixed lg:inline hidden w-[15%] bottom-0 left-0 right-auto text-[#a8b2d1]">
         <ul className="lists text-4xl text-[#a8b2d1]">
           <li className="py-2 hover:text-[#64ffda]">
-            <a href="https://github.com/Anneytah" className="icon"  target="_blank" without rel="noreferrer">
+            <a href="https://github.com/Anneytah" className="icon"  target="_blank" rel="noreferrer">
               <TbBrandGithub />
             </a>
           </li>
           <li className="py-2 hover:text-[#64ffda]">
-            <a href="mailto:aniagoanita@gmail.com?subject=Portfolio%20Inquiry&body=Hi%2C%20my%20name%20is%20%5BYour%20Name%5D.%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20further." className="icon"  target="_blank" without rel="noreferrer">
+            <a href="mailto:aniagoanita@gmail.com?subject=Portfolio%20Inquiry&body=Hi%2C%20my%20name%20is%20%5BYour%20Name%5D.%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20further." className="icon"  target="_blank" rel="noreferrer">
             <HiOutlineMail />
             </a>
           </li>
           <li className="py-2 hover:text-[#64ffda]">
-            <a href="/" className="icon" target="_blank" without rel="noreferrer">
+            <a href="https://x.com/anney_ta" className="icon" target="_blank" rel="noreferrer">
               <BsTwitter />
             </a>
           </li>
           <li className="py-2 hover:text-[#64ffda]">
-            <a href="https://wa.me/2348081005275?text=Hello%20bud%2C%20I%20just%20viewed%20your%20portfolio%20and%20I%E2%80%99m%20interested%20in%20working%20with%20you.%20Could%20we%20chat%20more%3F" className="icon"  target="_blank" without rel="noreferrer">
+            <a href="https://wa.me/2348081005275?text=Hello%20bud%2C%20I%20just%20viewed%20your%20portfolio%20and%20I%E2%80%99m%20interested%20in%20working%20with%20you.%20Could%20we%20chat%20more%3F" className="icon"  target="_blank" rel="noreferrer">
             <BsWhatsapp />
             </a>
           </li>
@@ -53,7 +57,7 @@ function Body() {
             <a
               href="https://www.linkedin.com/in/aniago-anita/"
               className="icon"
-               target="_blank" without rel="noreferrer"
+               target="_blank" rel="noreferrer"
             >
               <FiLinkedin />
             </a>
@@ -76,24 +80,23 @@ function Body() {
           </div>
           <div>
             <h2
-              className="pb-5 text-7xl max-sm:text-5xl text-[#ccd6f6] "
+              className="pb-5 text-7xl max-sm:text-3xl text-[#ccd6f6] "
             >
               <b>Aniago Somtochukwu Anita.</b>
             </h2>
           </div>
           <div>
             <h3
-              style={{ margin: 0, color: "#8892b0" }}
-              className="text-5xl pb-0 max-sm:text-3xl "
+              className="text-4xl pb-0 mt-0 max-sm:text-2xl text-[#8892b0]"
             >
-              Crafting Beautiful Web Experiences.
+              Designing Interfaces That Speak to Users.
             </h3>
           </div>
           <div style={{ minWidth: 10 }}>
-            <p className="text-[#8892b0]"
+            <p className="text-[#8892b0] mt-3 lg:text-[15px] text-sm max-sm:w-full"
               style={{
-                marginTop: 20,
-                fontSize: 18,
+                // marginTop: 20,
+                // fontSize: 18,
                 lineHeight: 1.3,
               }}
             >
@@ -105,9 +108,11 @@ function Body() {
             </p>
           </div>
           <div style={{ marginTop: 50 }}>
+            <Link to="/project">     
             <a href="/" className="course-link">
               Check out my Projects !
             </a>
+            </Link>
           </div>
 
           <About />

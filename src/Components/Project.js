@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "./Card.jsx";
 import Portfolio from "../Image/Portfolio.png";
+import Weather from "../Image/Weather.png";
+import Space from "../Image/Space.png"
+import Dictionary from "../Image/Dictionary.png";
 import Stoman from "../Image/Stoman.png";
 
 const Project = () => {
@@ -31,26 +34,27 @@ const Project = () => {
               repo = "Repository"
             />
             <Card
-              img={Stoman}
-              title="Stoman"
-              description="A weather forecast built with real-life data showing the weather forecast in your City"
-              feature="Key Features :"
-              first="Collapsible Sidebar w/ Theme Support"
-              second="Profile Management w/ Instant Updates"
-              third="Real-time Inventory Stats & Smart Notifications"
-              forth="Financial Reports w/ Charts & Insights"
-              fifth="Advanced Product Search & Customer Management"
+              img={Weather}
+              title="Weather App"
+              description="Get real-time weather updates and a sleek 5-day forecast for any city — all in one fast, interactive, and mobile-friendly app!"
+              feature="Key Features:"
+              first="Live Weather Data from OpenWeather API"
+              second="City-Based Weather Search"
+              third="Responsive Design"
+              forth="Clean, User-Friendly Interface"
+              fifth="Current Conditions & Forecast Display"
               tech = "Tech Stack :"
               react = "React"
               tailwind = "Taiwind"
-              frame = "Framer Motion"
+              frame = "Axios"
+              geo = "Geolocation"
               view = "View Live"
               repo = "Repository"
               reverse
             />
             <Card
-              img={Stoman}
-              title="Portfolio"
+              img={Space}
+              title="Space Tourism"
               description="My portfolio showcasing my talent"
               feature="Key Features :"
               first="Collapsible Sidebar w/ Theme Support"
@@ -69,19 +73,19 @@ const Project = () => {
 
           <div className="lg:p-6">
             <Card
-              img={Portfolio}
-              title="Portfolio"
-              description="My portfolio showcasing my talent"
+              img={Dictionary}
+              title="Dictionary"
+              description="This dictionary app provides instant word definitions and pronunciations in a clean, mobile-friendly interface."
               feature="Key Features :"
-              first="Collapsible Sidebar w/ Theme Support"
-              second="Profile Management w/ Instant Updates"
-              third="Real-time Inventory Stats & Smart Notifications"
-              forth="Financial Reports w/ Charts & Insights"
-              fifth="Advanced Product Search & Customer Management"
+              first="Dynamic Word Search"
+              second="Real-Time Definitions"
+              third="Audio Pronunciation"
+              forth="Mobile-Friendly Layout"
+              fifth="User-Friendly Interface"
               tech = "Tech Stack :"
               react = "React"
               tailwind = "Taiwind"
-              frame = "Framer Motion"
+              frame = "Axios"
               view = "View Live"
               repo = "Repository"
               reverse
@@ -102,24 +106,6 @@ const Project = () => {
               frame = "Framer Motion"
               view = "View Live"
               repo = "Repository"
-            />
-            <Card
-              img={Stoman}
-              title="Portfolio"
-              description="My portfolio showcasing my talent"
-              feature="Key Features :"
-              first="Collapsible Sidebar w/ Theme Support"
-              second="Profile Management w/ Instant Updates"
-              third="Real-time Inventory Stats & Smart Notifications"
-              forth="Financial Reports w/ Charts & Insights"
-              fifth="Advanced Product Search & Customer Management"
-              tech = "Tech Stack :"
-              react = "React"
-              tailwind = "Taiwind"
-              frame = "Framer Motion"
-              view = "View Live"
-              repo = "Repository"
-              reverse
             />
           </div>
         </div>
