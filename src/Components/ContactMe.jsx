@@ -22,7 +22,7 @@ const ContactMe = () => {
           create something amazing together!
         </p>
 
-        <div className="flex gap-16 mx-auto mt-10">
+        <div className="gap-14 lg:flex  p-5 mx-auto mt-10">
           <div className="rounded-md bg-[#373b44] w-full">
             <form className="m-5 p-3">
               <p className="text-[#ccd6f6] text-sm">Name</p>
@@ -30,7 +30,7 @@ const ContactMe = () => {
                 type="text"
                 id=""
                 placeholder="Your Name"
-                className="w-full p-2.5 rounded-md my-3 px-4 bg-[#464a55] text-[#ccd6f6] focus:outline-none focus:ring-2 focus:ring-[#64ffda]"
+                className="w-full text-sm p-2.5 rounded-md my-3 px-4 bg-[#464a55] text-[#ccd6f6] focus:outline-none focus:ring-2 focus:ring-[#64ffda]"
               />
               <p className="m-0 text-[#ccd6f6] text-sm">Email</p>
 
@@ -38,15 +38,15 @@ const ContactMe = () => {
                 type="email"
                 id=""
                 placeholder="your.email@example.com"
-                className="w-full p-2.5 rounded-md bg-[#464a55] px-4 my-3 text-[#ccd6f6]  focus:outline-none focus:ring-2 focus:ring-[#64ffda]"
+                className="w-full text-sm p-2.5 rounded-md bg-[#464a55] px-4 my-3 text-[#ccd6f6]  focus:outline-none focus:ring-2 focus:ring-[#64ffda]"
               />
               <p className="m-0 text-[#ccd6f6] text-sm">Message</p>
 
-              <textarea className="w-full h-32 p-2.5 rounded-md bg-[#464a55] px-4 my-3 text-[#ccd6f6]  focus:outline-none focus:ring-2 focus:ring-[#64ffda] ">
-                Your message
+              <textarea placeholder="Your message" className="w-full text-sm h-32 p-2.5 rounded-md bg-[#464a55] px-4 my-3 text-[#ccd6f6]  focus:outline-none focus:ring-2 focus:ring-[#64ffda] ">
+                
               </textarea>
 
-              <input type="submit" value="Send Message" className="w-full p-2.5 rounded-md px-4 my-3 bg-[#64ffda] cursor-pointer hover:bg-[#40f0c7]"/>
+              <input type="submit" value="Send Message" className="w-full  p-2.5 rounded-md px-4 my-3 bg-[#64ffda] cursor-pointer hover:bg-[#40f0c7]"/>
             </form>
           </div>
 
@@ -56,12 +56,12 @@ const ContactMe = () => {
             <div className="m-5 p-3">
               <h1 className="text-center font-semibold text-white text-2xl"> Contact Info</h1>
              
-             <div className="mx-8 my-4 p-5">
+             <div className="lg:mx-8 lg:my-4 lg:p-5">
                 <div className="flex p-4">
                   <div className="text-white font-bold text-5xl">
                   <BsPersonHeart />
                   </div>
-                    <div className="text-white px-5">
+                    <div className="text-white text-sm lg:px-5 px-2">
                         <p>Name</p>
                         <p>Aniago Anita</p>
                     </div>
@@ -71,7 +71,7 @@ const ContactMe = () => {
                   <FaMapLocationDot />
                   </div>
 
-                    <div className="text-white px-5">
+                    <div className="text-white text-sm lg:px-5 px-2">
                         <p>Location</p>
                         <p>Rivers State, Nigeria.</p>
                     </div>
@@ -80,7 +80,7 @@ const ContactMe = () => {
                 <div className="text-white font-bold text-5xl">
                 <MdOutlineWifiCalling />
                   </div>
-                    <div className="text-white px-5">
+                    <div className="text-white text-sm lg:px-5 px-2">
                         <p>Call</p>
                         <p>+234 9034434787</p>
                     </div>
@@ -89,7 +89,7 @@ const ContactMe = () => {
                 <div className="text-white font-bold text-5xl">
                 <MdAlternateEmail />
                   </div>
-                    <div className="text-white px-5">
+                    <div className="text-white text-sm lg:px-5 px-2">
                         <p>Email</p>
                         <p>aniagoanita@gmail.com</p>
                     </div>

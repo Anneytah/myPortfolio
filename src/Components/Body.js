@@ -68,14 +68,14 @@ function Body() {
 
       <div aria-orientation="vertical" className="right lg:fixed lg:inline hidden w-[18%] bottom-0 left-auto right-0 text-[#a8b2d1]">
         <div className="column">
-          <a href="/">aniagoanita@gmail.com</a>
+          <a href="mailto:aniagoanita@gmail.com?subject=Portfolio%20Inquiry&body=Hi%2C%20my%20name%20is%20%5BYour%20Name%5D.%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20further." target="_blank" rel="noreferrer">aniagoanita@gmail.com</a>
         </div>
       </div>
 
       <main className="lg:p-52 lg:pt-0 p-9 overflow-hidden">
-        <section className="contain">
+        <section>
           <div>
-            <h1 className="pb-2 px-3" style={{ color: "#64ffda", fontSize: 18, marginTop: 300 }}>
+            <h1 className="pb-2 text-sm lg:mt-64 mt-28 text-[#64ffda]" >
               Hi, my name is
             </h1>
           </div>
@@ -96,8 +96,6 @@ function Body() {
           <div style={{ minWidth: 10 }}>
             <p className="text-[#8892b0] mt-3 lg:text-[15px] text-sm max-sm:w-full"
               style={{
-                // marginTop: 20,
-                // fontSize: 18,
                 lineHeight: 1.3,
               }}
             >
@@ -127,7 +125,7 @@ function Body() {
       </main>
 
       <div
-        className="fixed w-14 h-14 border border-white rounded-full pointer-events-none"
+        className="fixed w-14 h-14 hidden lg:inline border border-white rounded-full pointer-events-none"
         style={{
           top: position.y - 20,
           left: position.x - 20,

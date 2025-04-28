@@ -9,7 +9,7 @@ import Stoman from "../Image/Stoman.png";
 const Project = () => {
   return (
     <div>
-      <div style={{ marginBottom: 200 }}>
+      <div style={{ marginBottom: 150 }}>
         <h1 style={{ color: "#ccd6f6" }} className="project">
           Projects
         </h1>
@@ -47,7 +47,6 @@ const Project = () => {
               react = "React"
               tailwind = "Taiwind"
               frame = "Axios"
-              geo = "Geolocation"
               view = "View Live"
               repo = "Repository"
               link = "https://anitas-forecast.netlify.app/"

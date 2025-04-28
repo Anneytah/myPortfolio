@@ -7,13 +7,13 @@ const Card = (props) => {
         {props.title}
       </h3>
       <div
-        className={`lg:flex md:flex-col gap-7 my-5 m-0 ${
+        className={`lg:flex flex-row gap-7 my-5 m-0 ${
           props.reverse ? "lg:flex-row-reverse" : "lg:flex-row"
         }`}
       >
         <div>
           <img
-            className="rounded-t-lg lg:max-w-[38rem] border border-[#64ffda]"
+            className="rounded-t-lg lg:max-w-[38rem]  border border-[#64ffda]"
             src={props.img}
             alt="not found"
           />
@@ -27,7 +27,7 @@ const Card = (props) => {
               {props.feature}
             </p>
 
-            <ul className="list-disc text-[#ccd6f6] text-[14px] px-5">
+            <ul className="list-disc text-[#ccd6f6] lg:text-[14px] px-5">
               <li>{props.first}</li>
               <li>{props.second}</li>
               <li>{props.third}</li>
@@ -49,9 +49,6 @@ const Card = (props) => {
               </div>
               <div className="border border-green-300 rounded-md lg:px-3 px-1 py-1">
                 {props.frame}
-              </div>
-              <div className="border border-green-300 rounded-md lg:px-3 px-1 py-1">
-                {props.geo}
               </div>
             </div>
 

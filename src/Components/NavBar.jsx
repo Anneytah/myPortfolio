@@ -11,7 +11,7 @@ function NavBar() {
   };
   return (
     <>
-      <nav className="border-gray-200 dark:bg-gray-900">
+      <nav>
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <h1>
             <a href="/" className="text-5xl  text-[#a8b2d1]">
@@ -26,32 +26,26 @@ function NavBar() {
           >
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <Link to="/"
-                  
+                <Link
+                  to="/"
                   className="block text-[#a8b2d1] py-2 pl-3 pr-4 md:bg-transparent"
                 >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/"
-                  
-                  className="block text-[#a8b2d1] py-2 pl-3 pr-4"
-                >
+                <Link to="/" className="block text-[#a8b2d1] py-2 pl-3 pr-4">
                   About_Me
                 </Link>
               </li>
               <li>
-                <Link to="/"
-                  
-                  className="block text-[#a8b2d1] py-2 pl-3 pr-4"
-                >
+                <Link to="/" className="block text-[#a8b2d1] py-2 pl-3 pr-4">
                   Project
                 </Link>
               </li>
               <li>
-                <Link to="/contact"
-                  
+                <Link
+                  to="/contact"
                   className="block text-[#a8b2d1] py-2 pl-3 pr-4"
                 >
                   Contact_Me
@@ -66,12 +60,13 @@ function NavBar() {
                 </Link>
               </li> */}
               <li>
-                <Link to=""
-                  
+                <a
+                  href="https://1drv.ms/b/c/11ab9898e882778e/ETIj_HOME2NOgD4WA_QhfdQBY6uT-r6jnnbm2LfAlEoVeA?e=rArySd"
                   className="block  py-2 pl-3 pr-4 border border-[#64ffda] p-[7px 15px] text-[#64ffda] rounded "
+                   target="_blank" rel="noreferrer"
                 >
                   Resume
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
