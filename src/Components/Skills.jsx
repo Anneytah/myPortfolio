@@ -8,7 +8,9 @@ import { BsBootstrapFill } from "react-icons/bs";
 import { TbBrandGithub } from "react-icons/tb";
 import { MdLaptopMac } from "react-icons/md";
 import { BiLogoTypescript } from "react-icons/bi";
+import ScrollFadeIn from './ScrollFadeIn';
 // import { FaPen } from "react-icons/fa";
+
 
 
 const skills = [
@@ -82,7 +84,7 @@ const Skills = () => {
     //     </div>
     //   </div>
     // </section>
-
+<ScrollFadeIn>
        <section className="py-12 mt-24">
       <div className="container mx-auto">
         <h2 className="text-3xl mb-8 text-[#ccd6f6] project">Tech Stack</h2>
@@ -104,6 +106,7 @@ const Skills = () => {
         </div>
       </div>
     </section>
+    </ScrollFadeIn>
   )
 }
 

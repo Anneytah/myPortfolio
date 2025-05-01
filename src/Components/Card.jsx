@@ -31,7 +31,6 @@ const Card = (props) => {
               <li>{props.first}</li>
               <li>{props.second}</li>
               <li>{props.third}</li>
-              <li>{props.third}</li>
               <li>{props.forth}</li>
               <li>{props.fifth}</li>
             </ul>

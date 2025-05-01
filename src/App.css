@@ -106,7 +106,7 @@ nav .nav-div .nav-bar {
   padding: 1.25rem;
   line-height: 1;
   text-decoration: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .about {

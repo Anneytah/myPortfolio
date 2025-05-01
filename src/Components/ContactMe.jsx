@@ -7,11 +7,13 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { MdOutlineWifiCalling } from "react-icons/md";
 import { MdAlternateEmail } from "react-icons/md";
 import Footer from "./Footer";
+import ScrollFadeIn from "./ScrollFadeIn";
 
 const ContactMe = () => {
   return (
     <div className="bg-[#282c34] pb-10 mt-6 overflow-hidden">
       <NavBars />
+      <ScrollFadeIn>
       <div className="mx-auto mt-36 max-w-6xl">
         <h2 className="text-center text-4xl py-2">
           <span className="text-[#ccd6f6]">Get In</span>{" "}
@@ -102,6 +104,7 @@ const ContactMe = () => {
         </div>
       </div>
       <Footer />
+    </ScrollFadeIn>
     </div>
   );
 };
