@@ -1,14 +1,15 @@
 import React from "react";
 // import Girl from "../Image/Girl.JPG";
 import Skills from "./Skills";
-import Anita from "../Image/Anita.jpg";
+// import Anita from "../Image/Anita.jpg";
+import Sommy from "../Image/Sommy.jpg";
 
 function About() {
   return (
     <div>
       <section className="about">
         <div>
-          <h1 style={{ color: "#ccd6f6" }} className="heading text-[32px]">
+          <h1 style= {{ color: "#ccd6f6" }} className="heading text-[32px]">
             About Me
           </h1>
         </div>
@@ -41,7 +42,7 @@ function About() {
           <div className="image w-[30%] relative max-sm:w-full">
             <div className="w-fit relative rounded-md bg-[#64ffda]">
               <div className="image-wrapper rounded-md relative">
-                <img src={Anita} alt="not found" className="lg:max-w-[22rem]" />
+                <img src={Sommy} alt="not found" className="lg:max-w-[22rem]" />
               </div>
             </div>
           </div>
